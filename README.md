@@ -5,11 +5,11 @@ D4_V8: Search and Rescue- Oxygen Constraints and Survival Limits
 
 This repository contains the design, implementation, and evaluation of an automated planning framework for an autonomous multi-agent robotic fleet operating in a safety-critical Search and Rescue (SAR) environment. The central operational constraint is atmospheric oxygen degradation; both robotic assets and human victims depend entirely on localized, finite life-support payloads.
 
-### 🤖 Multi-Agent Fleet
+### Multi-Agent Fleet
 * **Primary Rescue Units ($R_1$, $R_2$):** Equipped with composite high-pressure cylinders providing 1000L of oxygen. For computational grounding efficiency, this payload is normalized to 100 operational units.
 * **Logistical Support Asset ($R_3$):** A specialized robot capable of delivering fresh cylinders mid-transit to prevent irreversible cellular necrosis in patients experiencing acute cerebral hypoxia.
 
-### 🛠️ Modeling Paradigms
+### Modeling Paradigms
 To address the full spectrum of planning expressiveness, the project develops two distinct architectural models:
 
 #### 1. Q1 Model (Discrete Numeric PDDL)
@@ -33,5 +33,5 @@ The planner dynamically assigns medical devices based on the patient's SpO₂ sa
 | **Simple Face Mask** | Non-COPD, moderate hypoxia | 7 units/step | 3.5 units/sec | 35 / 35 units |
 | **Reservoir Mask** | Profound hypoxia, SpO₂ < 91% | 12 units/step | 6.0 units/sec | 60 / 40 units |
 
-### 🚀 Execution and Emergent Behaviors
+### Execution and Emergent Behaviors
 By linking physical kinematics directly to physiological constraints, the heuristic planning engines correctly predict mathematical dead-ends and dynamically rewrite operational timelines. Testing reveals emergent behaviors, such as multi-agent handoffs, where one robot acts purely as a clinical setup unit while the other acts as a dedicated transport vector to optimize asset availability.
