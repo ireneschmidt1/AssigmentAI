@@ -23,7 +23,7 @@ To address the full spectrum of planning expressiveness, the project develops tw
 * **Compiler Stabilization (Action Splitting):** State-of-the-art LP solvers (like OPTIC) can suffer severe memory corruption when evaluating conditional effects inside durative actions. To ensure stability, transport logic was split into two mutually exclusive actions (`move-with-patient` and `move-with-patient-to-safe-zone`). 
 * **Exact Temporal Discretization:** Instead of relying on native continuous `#t` decay, oxygen depletion is calculated precisely at the end of the durative action using the integral of the flow rate over the specific edge duration.
 
-### 🩺 Medical Device Constraints
+### Medical Device Constraints
 The planner dynamically assigns medical devices based on the patient's SpO₂ saturation profile to prevent tissue hypoxia. The devices enforce the following parameters:
 
 | Device | Indication | Q1 Flow | Q2 Flow | Alarm Threshold (Q1/Q2) |
