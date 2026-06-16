@@ -12,7 +12,7 @@ This repository contains the design, implementation, and evaluation of an automa
 ### Modeling Paradigms
 To address the full spectrum of planning expressiveness, the project develops two distinct architectural models:
 
-#### 1. Q1 Model (Discrete Numeric PDDL)
+#### 1. Q1 Model (Discrete Numeric PDDL) (ENHSP)
 * **Mechanics:** Employs the `:numeric-fluents` requirement where time is discretized into sequential task-steps, and oxygen depletion is mapped to discrete spatial movements.
 * **Optimization:** Minimizes `total-oxygen-consumed`.
 * **Reward Hacking Prevention:** Early iterations saw the heuristic planner "kidnapping" rescued patients from the safe zone to waste oxygen and artificially trigger a cylinder reset from $R_3$. This metric exploitation was solved by introducing a strict topological lock: `(not (safe-zone ?from))`.
