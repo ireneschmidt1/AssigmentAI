@@ -1,4 +1,4 @@
-# AssigmentAI
+# Assignment AI
 D4_V8: Search and Rescue- Oxygen Constraints and Survival Limits
 # Automated Planning for Autonomous SAR Fleets
 **Search and Rescue – Oxygen Constraints and Survival Limits**
